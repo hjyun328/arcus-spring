@@ -115,7 +115,9 @@ public class ArcusCacheManager extends AbstractCacheManager implements Disposabl
     cache.setServiceId(configuration.getServiceId());
     cache.setPrefix(configuration.getPrefix());
     cache.setArcusClient(client);
+    cache.setArcusFrontCache(configuration.getArcusFrontCache());
     cache.setExpireSeconds(configuration.getExpireSeconds());
+    cache.setFrontExpireSeconds(configuration.getFrontExpireSeconds());
     cache.setTimeoutMilliSeconds(configuration.getTimeoutMilliSeconds());
     cache.setOperationTranscoder(configuration.getOperationTranscoder());
     cache.setWantToGetException(true);
